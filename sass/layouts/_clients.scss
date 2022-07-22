@@ -1,0 +1,32 @@
+.clients__list{
+    display: flex;
+   }
+   
+  .clients__link-section:not(:last-child){
+    margin-right: 30px;
+   }
+  
+  .clients__link-style{
+    border: 1px solid var(--fill-color);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 4px;
+   width: 170px;
+   height: 92px;
+   color: var(--fill-color);
+   transition:color var(--animation), border-color var(--animation);
+
+   &:hover,
+   &:focus{
+     color: var(--accent-color);
+     border-color: var(--accent-color);
+   }
+  }
+  
+  .clients__link{
+    fill:currentColor;
+    width: 106px;
+    height: 60px;
+  }
+  

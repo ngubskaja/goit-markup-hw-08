@@ -1,0 +1,12 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: #FFFFFF;
+    color: #212121;
+    
+    &.no-scroll{
+        overflow: hidden;
+      }
+  }
+  

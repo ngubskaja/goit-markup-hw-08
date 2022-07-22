@@ -1,0 +1,22 @@
+.portfolio__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    width:370px ;
+    height: 294px; 
+    padding-top: 63px;
+    padding-bottom: 63px;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding-left: 24px;
+    padding-right: 24px;
+    transition: transform var(--animation);
+
+    .portfolio__link-galery:hover &,
+    .portfolio__link-galery:focus &{
+      transform: translateY(0%);
+    }
+  }
+  
+ 
+  

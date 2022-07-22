@@ -1,0 +1,115 @@
+.hero__btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 10px 32px;
+    min-width: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    font-family: Roboto, sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color:var(--main-txt-dark);
+  }
+
+.modal__button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    min-width: 200px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 4px 4px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--main-txt-dark);
+    transition: box-shadow var(--animation) ;
+
+    &:hover,
+    &:focus{
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  }
+  }
+
+  .modal__close-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50% ;
+    background-color: var(--main-txt-dark);
+    cursor: pointer;
+    transition:fill var(--animation);
+    &:hover,
+    &:focus{
+    fill: var(--accent-color);
+  }
+  }
+
+  .portfolio__btn {
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    color:var(--main-txt-light);
+    transition: color  var(--animation), background-color var(--animation), box-shadow var(--animation);
+    background-color:#F5F4FA ;
+
+    &--accent{
+      background-color: var(--accent-color);
+      color: var(--main-txt-dark);
+    }
+    
+    &:hover,
+    &:focus {
+      box-shadow:  0px 4px 4px rgb(0 0 0 / 25%);
+      background-color: var(--accent-color);
+      color: var(--main-txt-dark);
+    }
+  }
+  
+
+  .footer-send__btn {
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    margin-left: 12px;
+    padding-top: 10px;
+    padding-right: 28px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--main-txt-dark);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+  }
+
+  
