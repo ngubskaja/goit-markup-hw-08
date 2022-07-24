@@ -1,3 +1,14 @@
+
+.feature-section{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+  @media screen and (min-width:1200px){
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .list__title-site::before{
     display: block;
     content: "";
