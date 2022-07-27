@@ -634,18 +634,30 @@ img {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Img\ \(1\).jpg);
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img\ \(1\).jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-color: #C4C4C4;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/header_sm.jpg);
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/header_sm.jpg);
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 400px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/header_md.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/header_md.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/header_lg.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/header_lg.jpg);
+  }
 }
 
 .hero__slogan {
@@ -1377,14 +1389,16 @@ img {
 }
 
 .footer-site__logo {
+  padding: 0px;
   margin-bottom: 20px;
   color: var(--main-txt-dark);
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: block;
+  text-align: center;
 }
-
 .logo__accent {
   font-family: Raleway;
   font-style: normal;
@@ -1396,9 +1410,8 @@ img {
 }
 
 .adress {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+  text-align: center;
   margin-bottom: 9px;
   height: 21px;
   left: 215px;

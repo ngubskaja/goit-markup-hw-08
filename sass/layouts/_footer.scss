@@ -44,10 +44,17 @@
   }
 
   .footer-site__logo{
+    @media screen and (min-width:768px) and (max-width:1199px){
+      // display: block;
+      // margin-left: 115px;
+    }
+    padding: 0px;
     margin-bottom: 20px;
     color: var(--main-txt-dark);
     width: 100%;
     justify-content: center;
+    display: block;
+    text-align: center;
   }
   
   .logo__accent {
@@ -61,7 +68,8 @@
   }
   
   .adress {
-    align-items: center;
+    display: block;
+    text-align: center;
     margin-bottom: 9px;
     height: 21px;
     left: 215px;
