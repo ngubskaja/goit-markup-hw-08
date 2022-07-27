@@ -3,13 +3,14 @@
 
 
 .portfolio__list-nav {
+  list-style: none;
     @media screen and (max-width:767px){
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 40px;
       align-items: stretch;
       justify-content: flex-start;
-      list-style: none;
+    
       }
       @media screen and (min-width:768px){
         display: flex;

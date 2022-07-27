@@ -11,7 +11,7 @@
   }
   
   .logo {
-    margin-right: 92px;
+    
     display: block;
     font-family: Raleway;
     font-style: normal;
@@ -24,95 +24,132 @@
       padding-top: 16px;
       padding-bottom: 16px;
     }
+    @media screen and (min-width:768px)  {
+      margin-right: 88px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+    @media screen and (min-width:1200px)  {
+      margin-right: 92px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
   }
 
   .header__nav{
-    display: none;
+    @media screen and (max-width:767px)  {
+      display: none;
+    }
+    @media screen and (max-width:1199px)  {
+      
+      
+    }
+    
   }
+  
   .header__list{
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
    
   }
   .header__item:not(:last-child) {
-    // margin-right: 50px;
+    @media screen and (min-width:768px)  {
+      margin-right: 50px;
+    }
+    
   }
   
   .header__link {
-    // font-family: Roboto, sans-serif;
-    // font-style: normal;
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.1;
-    // color: var(--main-txt-light);
-    // transition: color var(--animation);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    color: var(--main-txt-light);
+    transition: color var(--animation);
+
     &--active{
       color: var(--accent-color);
     }
   }
   .header__link:hover,
   .header__link:focus {
-    // color:var(--accent-color);
+    color:var(--accent-color);
   }
   
   .current{
-    // position: relative;
-    // &::after{
-    //   content: '';
-    //   position: absolute;
-    //   bottom: 0;
-    //   left: 0;
-    //   transform: translateY(31px);
-    //   width: 100%;
-    //   height: 4px;
-    //   background-color: var(--accent-color);
-    //   border-radius: 2px;
-    // }
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateY(31px);
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
   }
 
   .info-list {
-    display: none;
-    // display: flex;
-    // margin-left: auto;
-    // align-items: center;
+    @media screen and (max-width:767px)  {
+      display: none;
+    }
+    @media screen and (min-width:768px)  and (max-width:1199px)  {
+      display: flex;
+    flex-direction: column;
+    }
+    display: flex;
+    margin-left: auto;
+    align-items: center;
   }
   
   .info-list__email-icon{
-    // margin-right: 10px;
-    // width: 16px;
-    // height: 12px;
-    // fill: currentColor;
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
   }
   
   .info-list__phone-icon{
-    // margin-right: 10px;
-    // width: 10px;
-    // height: 16px;
-    // fill: currentColor;
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
   }
   
   .info-list__email,
   .info-list__contact-number {
-    // font-family: Roboto, sans-serif;
-    // font-style: normal;
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.1;
-    // letter-spacing: 0.02em;
-    // color: var(--p-color);
-    // transition:color var(--animation);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--p-color);
+    transition:color var(--animation);
   }
   
   .info-list__email:hover,
   .info-list__email:focus{
-  // color: var(--accent-color);
+  color: var(--accent-color);
   }
   
   .info-list__contact-number:hover,
   .info-list__contact-number:focus{
-    // color: var(--accent-color);
+    color: var(--accent-color);
   }
   
+  .info-list__link-email{
+    @media screen and (max-width:1199px)  {
+      margin-bottom: 10px;
+    }
+
+  }
   .info-list__link-contact{
-    // margin-left: 50px;
+    @media screen and (min-width:1200px)  {
+      margin-left: 50px;
+    }
+    
   }
