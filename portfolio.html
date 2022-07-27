@@ -19,10 +19,16 @@
 
     
     <!--Header portfolio-->
-    <!-- <header class="header__page ">
+    <header class="header__page ">
         <div class=" header-container container">
             <a class="logo  link" href="index.html"> <span class="logo__accent">Web</span>Studio</a>
-            <nav>
+            <button class="mobile-menu-btn" type="button" data-menu-button>
+                <svg class="mobile-menu-icon" width="24" heigth="16">
+                    <use class="mobile-menu-burger" href="./images/sprite2.svg#menu-mobile"></use>
+                    <use class="mobile-menu-close" href="./images/sprite2.svg#close-mobile"></use>
+                </svg>                
+            </button>    
+            <nav class="header__nav list">
                 <ul class="header__list list">
                     <li class="header__item"> <a class="header__link link" href="./index.html">Студия</a></li>
                     <li class="header__item"> <a class="header__link  link header__link--active current" href="">Портфолио</a></li>
@@ -41,20 +47,20 @@
                         </svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
-    </header> -->
+    </header>
 
 
     <!--Main portfolio-->
     <main>            
         <section class="section  portfolio ">
             <div class="  container">
-                <!-- <ul class="list portfolio__list-nav">
+                <ul class=" portfolio__list-nav">
                     <li class="portfolio__navigation"><button class="portfolio__btn portfolio__btn--accent" type="button">Все</button></li>
                     <li class="portfolio__navigation"><button class="portfolio__btn" type="button">Веб-сайты</button></li>
                     <li class="portfolio__navigation"><button class="portfolio__btn" type="button">Приложения</button></li>
                     <li class="portfolio__navigation"><button class="portfolio__btn" type="button">Дизайн</button></li>
                     <li class="portfolio__navigation"><button class="portfolio__btn" type="button">Маркетинг</button></li>
-                </ul>            -->
+                </ul>           
             <!--Galery section-->
           <div class=" ">
                 <ul class="list portfolio__galery ">
@@ -68,7 +74,7 @@
                                  </p> 
                         </div>
                         </div>                       
-                        <div class="portfolio__galery-title">
+                        <div class="portfolio__galery-title  class">
                             <h3 class="portfolio__name-link">Технокряк</h3>
                             <p  class="portfolio__text" >Веб-сайт</p>
                         </div>
@@ -209,7 +215,7 @@
 
     </main>
         <!--Footer portfolio section-->
-            <!-- <footer class="  footer footer-site ">
+            <footer class="  footer footer-site ">
                 <div class="footer-section container">
                     <div>
                         <a class="logo footer-site__logo link" href="index.html"><span class="logo__accent">Web</span>Studio</a>
@@ -258,7 +264,47 @@
                         </form>
                     </div>
                 </div>             
-            </footer> --> 
+            </footer>
+            
+            <!-- mobile menu -->
+          <div class="mobile-menu" data-menu>
+            <ul class="mobile-menu-nav list">
+                <li class="mobile-menu-item">
+                    <a class="link mobile-menu-link " href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="link mobile-menu-link header__link--active" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="link mobile-menu-link" href="">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu-contacts list">
+                <li class="mobile-menu-contacts-item">
+                    <a class="link mobile-menu-contacts-tell" href="">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu-contacts-item">
+                    <a class="link mobile-menu-contacts-mail" href="">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu-socials list">
+                <li class="mobile-menu-socials-item">
+                    <a class="mobile-menu-socials-link link" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu-socials-item">
+                    <a class="mobile-menu-socials-link link" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu-socials-item">
+                    <a class="mobile-menu-socials-link link" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu-socials-item">
+                    <a class="mobile-menu-socials-link link" href="">LinkedIn</a>
+                </li>
+            </ul>
+          </div>
+
+      
+      <script src="./js//menu.js"> </script>
 </body>
 
 </html>

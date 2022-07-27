@@ -17,9 +17,15 @@
 
 <body data-body>
         <!-- Header section -->        
-    <!-- <header class="header__page">
+    <header class="header__page">
         <div class=" header-container container">
-            <a class="logo link" href="index.html"> <span class="logo__accent">Web</span>Studio</a>           
+            <a class="logo link" href="index.html"> <span class="logo__accent">Web</span>Studio</a>  
+            <button class="mobile-menu-btn" type="button" data-menu-button>
+                <svg class="mobile-menu-icon" width="24" heigth="16">
+                    <use class="mobile-menu-burger" href="./images/sprite2.svg#menu-mobile"></use>
+                    <use class="mobile-menu-close" href="./images/sprite2.svg#close-mobile"></use>
+                </svg>                
+            </button>         
             <nav class="header__nav list">
                 <ul class="header__list list">
                     <li class=" header__item"><a class="header__link link header__link--active current" href="">Студия</a></li>
@@ -39,22 +45,22 @@
                     </svg>+38 096 111 11 11</a></li>
                 </ul>          
         </div>           
-    </header> -->
+    </header>
 
         <!-- Button section -->   
     <main>
-        <!-- <section class="hero">
+          <!-- <section class="hero">
         <div class="  btn-section-site container">
             <h1 class="hero__slogan">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br> ДЛЯ ВАШЕГО БИЗНЕСА</h1> 
             <button class="hero__btn" type= "button" data-modal-open>
                 Заказать услугу</button>
-        </div>
-        </section>    -->
+        </div> -->
+        </section>     
 
      <!-- List section -->    
              <section class="section  feature-section"> 
                 <div class=" container ">
-                <ul class="feature-section__list list ">
+                <ul class="feature-section__list list">
                     <li class="list__title-site list__title-antenna" >
                         <h3 class="list__title">Внимание к деталям</h3>
                         <p class="list__text">Идейные соображения, а также начало повседневной 
@@ -81,9 +87,9 @@
                     </li>
                 </ul>
                 </div>
-            </section>
+            </section>  
 
-            <!-- <section class="description">
+           <section class="description">
                 <div class="container "> 
                     <h2 class="description__title">Чем мы занимаемся</h2>               
                     <ul class="list description__list">
@@ -98,11 +104,11 @@
                     </li>
                     </ul>  
                 </div>
-            </section> --> 
+            </section> 
            
 
      <!-- Team section -->
-        <!-- <section class=" team section">
+       <section class=" team section">
             <div class="   container">
             <h2 class="team__title">Наша команда</h2>
             <ul class="list team__names">
@@ -226,7 +232,7 @@
                 </li>
             </ul>            
             </div>
-        </section> -->
+        </section> 
 
         <!--List section-->
     <section class="section clients"> 
@@ -272,13 +278,13 @@
                 </li>  
             </ul>
         </div>
-    </section>         
+    </section>           
     </main>
 
     <!-- Footer section -->
-    <!-- <footer class="  footer footer-site ">
+    <footer class="  footer footer-site ">
         <div class="footer-section container">
-            <div>
+            <div >
                 <a class="footer-site__logo logo link" href="index.html"><span class="logo__accent">Web</span>Studio</a>
                 <address class="">
                 <ul class="information list  ">                    
@@ -325,7 +331,7 @@
                 </form>
             </div>
         </div>      
-    </footer> -->
+    </footer>
 
     <!-- modal window -->
 
@@ -377,11 +383,50 @@
                 </span>
               </label>  
                 <button class="modal__button" type="submit">Отправить</button>
-          </form>         
+          </form>   
         </div>
       </div> -->
+       
+          <!-- mobile menu -->
+          <div class="mobile-menu" data-menu>
+            <ul class="mobile-menu-nav list">
+                <li class="mobile-menu-item">
+                    <a class="link mobile-menu-link header__link--active" href="">Студия</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="link mobile-menu-link " href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="link mobile-menu-link" href="">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu-contacts list">
+                <li class="mobile-menu-contacts-item">
+                    <a class="link mobile-menu-contacts-tell" href="">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu-contacts-item">
+                    <a class="link mobile-menu-contacts-mail" href="">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu-socials list">
+                <li class="mobile-menu-socials-item">
+                    <a class="mobile-menu-socials-link link" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu-socials-item">
+                    <a class="mobile-menu-socials-link link" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu-socials-item">
+                    <a class="mobile-menu-socials-link link" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu-socials-item">
+                    <a class="mobile-menu-socials-link link" href="">LinkedIn</a>
+                </li>
+            </ul>
+          </div>
 
       <script src="./js/modal.js"> </script>
+      <script src="./js//menu.js"> </script>
+
   
 </body>
 </html> 

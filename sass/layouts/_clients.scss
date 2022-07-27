@@ -43,13 +43,23 @@
     height: 92px;
     color: var(--fill-color);
     transition:color var(--animation), border-color var(--animation);
-  
+    
 
    &:hover,
    &:focus{
      color: var(--accent-color);
      border-color: var(--accent-color);
    }
+   @media screen and (min-width:480px){
+    width: 210px;
+  }
+  @media screen and (min-width:768px){
+    width: 226px;
+  }
+  @media screen and (min-width:1200px){
+    width: 170px;
+  }
+  
   }
   
   .clients__link{
