@@ -3,7 +3,7 @@
 
 
 .portfolio__list-nav {
-    @media screen and (min-width:480px){
+    @media screen and (max-width:767px){
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 40px;
