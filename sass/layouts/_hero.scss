@@ -7,12 +7,12 @@
     height: 400px;
     margin:0 auto;
     text-align: center;
-    // padding-top: 200px;
-    // padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 200px;
     background-color: #C4C4C4;
     background-image:linear-gradient(to top, 
     rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),  url(../../images/hero/header_sm.jpg);
+    rgba(47, 48, 58, 0.4)),  url(../images/hero/header_sm.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -20,35 +20,37 @@
       (min-resolution: 2dppx){
         background-image:linear-gradient(to top, 
     rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),  url(../../images/hero/header@2x_sm.jpg);
+    rgba(47, 48, 58, 0.4)),  url(../images/hero/header@2x_sm.jpg);
   }
 
     @media screen and (min-width:768px)  {
       height: 400px;
       background-image:linear-gradient(to top, 
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),  url(../../images/hero/header_md.jpg);
+      rgba(47, 48, 58, 0.4)),  url(../images/hero/header_md.jpg);
       @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx){
         background-image:linear-gradient(to top, 
     rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),  url(../../images/hero/header@2x_md.jpg);
+    rgba(47, 48, 58, 0.4)),  url(../images/hero/header@2x_md.jpg);
   }
     }
     @media screen and (min-width:1200px) {
       height: 600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
      background-image:linear-gradient(to top,  
      rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)),  url(../../images/hero/header_lg.jpg);
+     rgba(47, 48, 58, 0.4)),  url(../images/hero/header_lg.jpg);
      @media (min-device-pixel-ratio: 2),
      (-webkit-min-device-pixel-ratio: 2),
      (min-resolution: 192dpi),
      (min-resolution: 2dppx){
        background-image:linear-gradient(to top, 
    rgba(47, 48, 58, 0.4),
-   rgba(47, 48, 58, 0.4)),  url(../../images/hero/header@2x_lg.jpg);
+   rgba(47, 48, 58, 0.4)),  url(../images/hero/header@2x_lg.jpg);
  }
     }
   }
@@ -63,11 +65,9 @@
     text-align: center;
     color: var(--main-txt-dark);
     text-transform: uppercase;
-    padding-top: 200px;
     @media screen and (max-width: 1199px) {
       font-size: 26px;
       line-height: 42px;
-      padding-top: 118px;
     }
   }
   
