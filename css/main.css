@@ -1456,9 +1456,8 @@ img {
   width: 100%;
   text-align: center;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer-site__logo {
-    display: block;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
