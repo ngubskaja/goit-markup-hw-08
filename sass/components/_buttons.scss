@@ -19,6 +19,7 @@
   }
 
 .modal__button{
+  
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -92,11 +93,13 @@
   
 
   .footer-send__btn {
-    display: flex;
     
+    @media screen and (min-width:1200px) {
+      margin-left: 12px;
+    }
+    display: flex;
     align-items: center;
     letter-spacing: 0.06em;
-    // margin-left: 12px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;

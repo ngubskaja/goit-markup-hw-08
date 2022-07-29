@@ -39,6 +39,9 @@
 
 
   .icon-footer__title{
+    @media screen and (min-width:1200px) {
+      text-align: left;
+    }
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
@@ -58,11 +61,7 @@
     
    
   }
- 
   
- 
- 
- 
   .description__title {
     margin-bottom: 50px;
     font-family: Roboto, sans-serif;

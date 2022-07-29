@@ -12,7 +12,10 @@
   }
   
   .information__email-link {
-    justify-content: center;
+    @media screen and (max-width:1199px)  {
+      justify-content: center;
+    }
+    
     font-family: Roboto;
     font-size: 14px;
     line-height: 1.7;
@@ -28,7 +31,9 @@
   }
 
   .information__contact-link{
-    justify-content: center;
+    @media screen and (max-width:1199px)  {
+      justify-content: center;
+    }
     font-family: Roboto;
     font-size: 14px;
     line-height: 1.7;
@@ -44,16 +49,17 @@
   }
 
   .footer-site__logo{
-    @media screen and (min-width:768px) and (max-width:1199px){
-      // display: block;
+    @media screen and (min-width:480px) and (max-width:1199px){
+      display: block;
+      justify-content: center;
+    display: block;
       // margin-left: 115px;
     }
     padding: 0px;
     margin-bottom: 20px;
     color: var(--main-txt-dark);
     width: 100%;
-    justify-content: center;
-    display: block;
+    
     text-align: center;
   }
   
@@ -67,6 +73,21 @@
     color: var(--accent-color);
   }
   
+  .footer-box{
+    @media screen and (min-width:768px)  {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    align-items: baseline;
+  }
+
+  .footer-contacts{
+    @media screen and (min-width:1200px)  {
+      margin-right: 70px;
+    }
+    
+    
+  }
   .adress {
     display: block;
     text-align: center;
@@ -87,13 +108,20 @@
     &:focus{
      color: var(--accent-color);
     }
+    @media screen and (min-width:768px)  {
+      text-align: left;
+    }
     
   }
   
   .icon-footer{ 
+    @media screen and (max-width:1199px)  {
+      margin-bottom: 60px;
+    }
+   
     display: block;
     // margin-left: 70px;
-    margin-bottom: 60px;
+    
 
   }
   
@@ -103,8 +131,11 @@
   }
   
   .footer-section{
-    // display: flex;
-    align-items: baseline;
+    @media screen and (min-width:1200px)  {
+      display: flex;
+    }
+    // align-items: baseline;
+    
   }
   
   .footer-container{
@@ -143,14 +174,18 @@
   }
   }
 
+  
   .footer-send{
-    margin-left: auto;
+    @media screen and (min-width:1200px)  {
+      margin-left: auto;
+    }
+    
   }
   
   .footer-send__input{
     padding-left: 16px;
-    // width: 358px;
-    width: 100%;
+    width: 358px;
+    
     height: 50px;
     color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -161,10 +196,27 @@
     cursor: pointer;
     transition: border-color var(--animation);
     margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
     &:hover,
     &:focus {
       border-color: var(--accent-color);
     }
+    @media screen and (max-width:767px) {
+      width: 100%;
+      
+    }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      width: 450px;
+      margin-left: 165px;
+      
+    }
+    
   }
   
 
