@@ -21,7 +21,7 @@
 }
 
 .mobile-menu-btn .is-open
-.data-menu{
+.mobile-menu-close{
     display: block;
 }
 
@@ -81,7 +81,7 @@
     letter-spacing: 0.02em;
     color: #2196F3;
     @media screen and (max-width:479px) {
-        font-size: 28px;
+        font-size: 27px;
     }
 }
 .mobile-menu-contacts-mail{
@@ -134,13 +134,12 @@
 //     }
 // }
 
-.mobile-menu-close{
-    // transition: 500ms;
-    // z-index: 100;
-    // opacity: 0;
+// .mobile-menu-close{
+//     transition: 500ms;
+//     z-index: 100;
+//     opacity: 0;
+// }
+// .mobile-menu .is-open .mobile-menu-close{
+//     opacity: 1;
+// }
 
-    .mobile-menu-btn .is-open &{
-        // opacity: 1;
-    }
-    
-}

@@ -23,12 +23,19 @@
     }
   
   }
-  .portfolio__galery:last-child
+  .portfolio__galery-info:last-child
   .portfolio__galery-info{
     @media screen and (min-width:768px) and (max-width:1199px){
       margin-right: auto;
     }
     
+  }
+  .portfolio__galery-info:first-child
+  .portfolio__galery-title{
+    @media screen and (min-width:768px) and (max-width:1199px){
+      padding-bottom: 56px;
+    }
+      
   }
   
 
@@ -43,7 +50,9 @@
       box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     }
   }
-
+  .portfolio__galery .portfolio__galery-title:first-child{
+  padding-bottom: 50px;
+ }
   
   .portfolio__card-overlay{
     position: relative;
