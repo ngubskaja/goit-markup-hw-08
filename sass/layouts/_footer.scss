@@ -2,10 +2,7 @@
     background-color: var(--footer-color);
   }
 
-  .information{
-    // align-items: center;
-    margin-bottom: 60px;
-  }
+ 
   
   .information__email {
     margin-bottom: 9px;
@@ -84,6 +81,9 @@
   .footer-contacts{
     @media screen and (min-width:1200px)  {
       margin-right: 70px;
+    }
+    @media screen and (max-width:1199px)  {
+      margin-bottom: 60px;
     }
     
     
@@ -181,6 +181,13 @@
     }
     
   }
+  .footer-send__form{
+    @media screen and (min-width:1200px)  {
+      display: flex;
+    }
+    
+    
+  }
   
   .footer-send__input{
     padding-left: 16px;
@@ -195,7 +202,7 @@
     outline: transparent;
     cursor: pointer;
     transition: border-color var(--animation);
-    margin-bottom: 20px;
+    
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -209,11 +216,12 @@
     }
     @media screen and (max-width:767px) {
       width: 100%;
-      
+      margin-bottom: 20px;
     }
     @media screen and (min-width:768px) and (max-width:1199px) {
       width: 450px;
-      margin-left: 165px;
+      margin-left: 145px;
+      margin-bottom: 20px;
       
     }
     
