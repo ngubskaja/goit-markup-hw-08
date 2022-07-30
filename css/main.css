@@ -1240,8 +1240,8 @@ img {
 @media screen and (max-width: 479px) {
   .modal {
     width: 310px;
-    -webkit-transform: translate(-155px, -190px);
-            transform: translate(-155px, -190px);
+    -webkit-transform: translate(-155px, -250px);
+            transform: translate(-155px, -250px);
   }
 }
 
